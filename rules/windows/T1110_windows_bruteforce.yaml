@@ -1,0 +1,15 @@
+id: SOC-WIN-T1110-001
+name: Brute Force - Multiple Failed Logons (Windows)
+description: Detects multiple failed logons from the same source IP in a short time window.
+severity: high
+mitre:
+  tactic: Credential Access
+  technique: T1110
+log_source: windows_security
+logic:
+  type: threshold
+  field: source_ip
+  match:
+    event_type: auth
+    action: logon_failed
+  threshold: 3

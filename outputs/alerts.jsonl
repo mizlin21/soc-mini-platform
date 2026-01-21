@@ -1,0 +1,1 @@
+{"alert_id": "SOC-WIN-T1110-001-2026-01-21T23:02:06.717293", "rule_id": "SOC-WIN-T1110-001", "name": "Brute Force - Multiple Failed Logons (Windows)", "severity": "high", "description": "Detects multiple failed logons from the same source IP in a short time window.", "source_ip": "10.0.0.45", "count": 3, "created_at": "2026-01-21T23:02:06.717319"}
